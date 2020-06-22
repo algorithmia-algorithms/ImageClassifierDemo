@@ -1,0 +1,43 @@
+[
+  {"case_name":  "test_input_dict",
+    "input": {"data":  "https://i.imgur.com/bXdORXl.jpg", "operation":  "predict"},
+    "type": "NO_EXCEPTION"
+  },
+  {"case_name":  "test_input_list",
+    "input": {"data":  [{"image_url":"https://i.imgur.com/bXdORXl.jpg"}, {"image_url":  "https://i.imgur.com/zdMdO70.jpg"}], "operation":  "predict"},
+    "type": "NO_EXCEPTION"
+  },
+  {"case_name":  "test_input_str",
+    "input": "https://i.imgur.com/bXdORXl.jpg",
+    "type": "NO_EXCEPTION"
+  },
+  {
+    "case_name": "benchmark_model",
+    "input":{"data": [
+                 {"image_url": "https://i.imgur.com/bXdORXl.jpg", "label": "malamute"},
+                 {"image_url": "https://i.imgur.com/YcAZMxM.jpg", "label": "pomeranian"},
+                 {"image_url": "https://i.imgur.com/zdMdO70.jpg", "label": "lion"},
+                 {"image_url": "https://i.imgur.com/ivkGMQb.jpeg", "label": "lion"},
+                 {"image_url": "https://i.imgur.com/QMRNUMN.jpg", "label": "necklace"},
+                 {"image_url": "https://i.imgur.com/o7WP6Px.jpg", "label": "necklace"},
+                 {"image_url": "https://i.imgur.com/FzwSR.jpg", "label": "manhole cover"},
+                 {"image_url": "https://i.imgur.com/EzllwpE.jpg", "label": "cardigan"},
+                 {"image_url": "https://i.imgur.com/HMvOHn7.jpg", "label": "cardigan"},
+                 {"image_url": "https://i.imgur.com/xcLDUQd.jpg", "label": "white wolf"},
+                 {"image_url": "https://i.imgur.com/gN6zgtN.jpg", "label": "lotion"},
+                 {"image_url": "https://i.imgur.com/MCt8OWb.jpg", "label": "burrito"},
+                 {"image_url": "https://i.imgur.com/lhWanDq.jpg", "label": "basketball"},
+                 {"image_url": "https://i.imgur.com/BZsMhIY.jpeg", "label": "lab coat"},
+                 {"image_url": "https://i.imgur.com/mVbWXXx.jpg", "label": "tractor"},
+                 {"image_url": "https://i.imgur.com/3BZtZIX.jpg", "label": "tractor"},
+                 {"image_url": "https://i.imgur.com/tWNlOUA.jpg", "label": "tractor"},
+                 {"image_url": "https://i.imgur.com/wqKHn7c.jpg", "label": "mobile home"},
+                 {"image_url": "https://i.imgur.com/GBBY6U6.jpeg", "label": "electric guitar"},
+                 {"image_url": "https://i.imgur.com/nP6itkJ.jpeg", "label": "electric guitar"},
+                 {"image_url": "https://i.imgur.com/Heg8wCg.jpeg", "label": "acoustic guitar"},
+                 {"image_url": "https://i.imgur.com/VPuujNm.jpeg", "label": "acoustic guitar"}
+                     ], "n": 1, "operation": "benchmark"},
+    "expected_output": 0.7,
+    "type": "GREATER_OR_EQUAL"
+  }
+]
