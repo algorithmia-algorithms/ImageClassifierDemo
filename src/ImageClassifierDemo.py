@@ -118,6 +118,7 @@ def apply(input):
     else:
         raise Exception("input  must be a dictionary/json object or a string")
 
+        
 model = load_model("old_model")
 labels = load_labels()
 
